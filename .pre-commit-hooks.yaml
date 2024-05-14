@@ -1,7 +1,7 @@
-- id: ruff
-  name: ruff
-  description: "Run 'ruff' for extremely fast Python linting"
-  entry: ruff check --force-exclude
+- id: rye-lint
+  name: rye-lint
+  description: "Run 'rye lint' for extremely fast Python linting"
+  entry: rye lint
   language: python
   types_or: [python, pyi]
   args: []
@@ -9,10 +9,10 @@
   additional_dependencies: []
   minimum_pre_commit_version: "2.9.2"
 
-- id: ruff-format
-  name: ruff-format
-  description: "Run 'ruff format' for extremely fast Python formatting"
-  entry: ruff format --force-exclude
+- id: rye-format
+  name: rye-format
+  description: "Run 'rye fmt' for extremely fast Python formatting"
+  entry: rye fmt
   language: python
   types_or: [python, pyi]
   args: []
